@@ -25,17 +25,25 @@ The Content Generator App supports four categories of content, each with its cor
 - **Poem Generator**:
 
   - Endpoint: [https://content-generator-backend-tnoc.onrender.com/generate/poem](https://content-generator-backend-tnoc.onrender.com/generate/poem)
+  - Method : POST
+  - Body : { "keyword": String }
 
 - **Story Generator**:
 
   - Endpoint: [https://content-generator-backend-tnoc.onrender.com/generate/story](https://content-generator-backend-tnoc.onrender.com/generate/story)
+  - Method : POST
+  - Body : { "keyword": String }
 
 - **Joke Generator**:
 
   - Endpoint: [https://content-generator-backend-tnoc.onrender.com/generate/joke](https://content-generator-backend-tnoc.onrender.com/generate/joke)
+  - Method : POST
+  - Body : { "keyword": String }
 
 - **Quote Generator**:
   - Endpoint: [https://content-generator-backend-tnoc.onrender.com/generate/quote](https://content-generator-backend-tnoc.onrender.com/generate/quote)
+  - Method : POST
+  - Body : { "keyword": String }
 
 ## Getting Started
 
@@ -44,7 +52,7 @@ To set up this project on your local machine, follow these steps:
 1. Clone the repository to your local environment.
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Ashik0101/content-generator-app.git
    ```
 
 2. Navigate to the project directory.
