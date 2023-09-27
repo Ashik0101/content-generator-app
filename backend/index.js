@@ -10,6 +10,9 @@ app.use(cors());
 app.use(express.json());
 
 /**************** Generating poem here.... ***************/
+app.get("/", async (req, res) => {
+  res.send({ message: "hello jee" });
+});
 app.post("/generate/poem", async (req, res) => {
   try {
     const keyword = req.body.keyword;

@@ -27,7 +27,7 @@ function App() {
       return;
     }
     setIsLoading(true);
-    const endpoint = `https://rich-mite-smock.cyclic.app/generate/${category.toLowerCase()}`;
+    const endpoint = `https://content-generator-backend-tnoc.onrender.com/generate/${category.toLowerCase()}`;
 
     (async () => {
       axios
@@ -69,6 +69,11 @@ function App() {
         <div className="loader-container">
           <div className="loader"></div>
           <h3>Generating {category}...</h3>
+          <div style={{ fontSize: "4px", backgroundColor: "lightblue" }}>
+            <p>The delay in the response is due to :</p>
+            <p>1. The backend is deployed in vercel, which is little slow</p>
+            <p>2. The content is being generated from GPT 3.5 API.</p>
+          </div>
         </div>
       ) : (
         content && (

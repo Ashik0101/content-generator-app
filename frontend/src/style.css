@@ -67,7 +67,7 @@ h2 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.5;
 }
 
@@ -122,4 +122,8 @@ p {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.notice {
+  font-size: 4px;
 }
